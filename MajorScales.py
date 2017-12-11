@@ -29,8 +29,7 @@ def note(scale,solfegePosition):
     scalePosition=notes.index(scale)
     semitone=solfege[solfegePosition]
     scalePosition+=semitone
-    if(scalePosition>11):
-        scalePosition=scalePosition%11-1
+    scalePosition=scalePosition%12
     print(notes[scalePosition])
 
 
